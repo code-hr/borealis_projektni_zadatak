@@ -1,0 +1,110 @@
+#brojac_pregleda .inside .pregledi-tablica {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#brojac_pregleda .inside .pregledi-tablica thead th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  position: relative;
+  cursor: pointer;
+  font-weight: 400;
+  color: #2c2c2c;
+}
+
+#brojac_pregleda .inside .pregledi-tablica thead th.active {
+  font-weight: 600;
+}
+
+#brojac_pregleda .inside .pregledi-tablica thead th:after {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  content: '';
+  display: inline-block;
+  margin-left: 5px;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid black;
+}
+
+#brojac_pregleda .inside .pregledi-tablica thead th.asc::after {
+  border-top: none;
+  border-bottom: 5px solid black;
+}
+
+#brojac_pregleda .inside .pregledi-tablica thead th.pregledi {
+  text-align: end;
+}
+
+#brojac_pregleda .inside .pregledi-tablica tbody tr td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+#brojac_pregleda .inside .pregledi-tablica tbody tr td:last-of-type {
+  text-align: end;
+}
+
+#brojac_pregleda .inside .pregledi-tablica tbody tr.niska td {
+  color: red;
+}
+
+#brojac_pregleda .inside .pregledi-tablica tbody tr.srednja td {
+  color: #ffaa00;
+}
+
+#brojac_pregleda .inside .pregledi-tablica tbody tr.visoka td {
+  color: green;
+}
+
+#brojac_pregleda .inside #toggle-rows {
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+#brojac_pregleda .inside .opis-boja h4 {
+  margin-bottom: 3px;
+}
+
+#brojac_pregleda .inside .opis-boja .boje .boja {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#brojac_pregleda .inside .opis-boja .boje .boja.niska span {
+  background-color: red;
+}
+
+#brojac_pregleda .inside .opis-boja .boje .boja.srednja span {
+  background-color: #ffaa00;
+}
+
+#brojac_pregleda .inside .opis-boja .boje .boja.visoka span {
+  background-color: green;
+}
+
+#brojac_pregleda .inside .opis-boja .boje .boja span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 10px;
+  height: 10px;
+  margin-left: 5px;
+}
+/*# sourceMappingURL=brojac_pregleda.css.map */

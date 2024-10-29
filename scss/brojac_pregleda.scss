@@ -1,0 +1,125 @@
+$niska: red;
+$srednja: #ffaa00;
+$visoka: green;
+
+#brojac_pregleda {
+    .inside {
+
+        .pregledi-tablica {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            margin-bottom: 10px;
+
+            thead th {
+                border: 1px solid #ddd;
+                padding: 8px;
+                text-align: left;
+                position: relative;
+                cursor: pointer;
+                font-weight: 400;
+                color: #2c2c2c;
+
+                &.active {
+                    font-weight: 600;
+                }
+
+                &:after {
+                    top: 50%;
+                    transform: translateY(-50%);
+
+                    content: '';
+                    display: inline-block;
+                    margin-left: 5px;
+                    width: 0;
+                    height: 0;
+                    border-left: 5px solid transparent;
+                    border-right: 5px solid transparent;
+                    border-top: 5px solid black;
+                }
+            
+                &.asc::after {
+                    border-top: none;
+                    border-bottom: 5px solid black;
+                }
+
+                &.pregledi {
+                    text-align: end; 
+                }
+            }
+
+            tbody tr {
+                td {
+                    border: 1px solid #ddd;
+                    padding: 8px;
+                    text-align: left;
+
+                    &:last-of-type {
+                        text-align: end;
+                    }
+                }
+
+                &.niska {
+                    td {
+                        color: $niska;
+                    }
+                }    
+
+                &.srednja {
+                    td {
+                        color: $srednja;
+                    }
+                }
+
+                &.visoka {
+                    td {
+                        color: $visoka;
+                    }
+                }
+            }
+        }
+
+        #toggle-rows {
+            margin-left: auto;
+            display: flex;
+            width: max-content;
+        }
+
+        .opis-boja {
+            h4 {
+                margin-bottom: 3px;
+            }
+            .boje {
+                .boja {
+                    display: flex;
+                    align-items: center;
+                    &.niska {
+                        span {
+                            background-color: $niska;
+                        }
+                    }
+
+                    &.srednja {
+                        span {
+                            background-color: $srednja;
+                        }
+                    }   
+
+                    &.visoka {
+                        span {
+                            background-color: $visoka;
+                        }
+                    }
+
+                    span {
+                        display: flex;
+                        width: 10px;
+                        height: 10px;
+                        margin-left: 5px;
+                    }
+                }
+            }
+        }
+
+    }
+}
