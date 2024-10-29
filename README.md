@@ -1,6 +1,6 @@
 <strong>Brojač Pregleda Objava</strong> <br>
 
-Verzija: 1.0 <br>
+<strong>Verzija</strong>: 1.0 <br>
 <strong>Autor</strong>: Robert Matijevic <br>
 <strong>Opis</strong>: WordPress plugin za praćenje dnevnih pregleda objava za potreba projektnog zadatka (Borealis Agency) <br>
 
